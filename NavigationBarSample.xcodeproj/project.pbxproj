@@ -14,6 +14,9 @@
 		182AC67C1BE0ED3700359322 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182AC67B1BE0ED3700359322 /* Images.xcassets */; };
 		182AC67F1BE0ED3700359322 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182AC67D1BE0ED3700359322 /* LaunchScreen.xib */; };
 		182AC68B1BE0ED3700359322 /* NavigationBarSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AC68A1BE0ED3700359322 /* NavigationBarSampleTests.m */; };
+		182AC6991BE0EDA200359322 /* DescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AC6951BE0EDA200359322 /* DescriptionView.m */; };
+		182AC69A1BE0EDA200359322 /* DescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182AC6961BE0EDA200359322 /* DescriptionView.xib */; };
+		182AC69B1BE0EDA200359322 /* UINavigationBar+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AC6981BE0EDA200359322 /* UINavigationBar+Background.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		182AC6841BE0ED3700359322 /* NavigationBarSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationBarSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182AC6891BE0ED3700359322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182AC68A1BE0ED3700359322 /* NavigationBarSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarSampleTests.m; sourceTree = "<group>"; };
+		182AC6941BE0EDA200359322 /* DescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionView.h; sourceTree = "<group>"; };
+		182AC6951BE0EDA200359322 /* DescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionView.m; sourceTree = "<group>"; };
+		182AC6961BE0EDA200359322 /* DescriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionView.xib; sourceTree = "<group>"; };
+		182AC6971BE0EDA200359322 /* UINavigationBar+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Background.h"; sourceTree = "<group>"; };
+		182AC6981BE0EDA200359322 /* UINavigationBar+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Background.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,11 @@
 		182AC66D1BE0ED3700359322 /* NavigationBarSample */ = {
 			isa = PBXGroup;
 			children = (
+				182AC6941BE0EDA200359322 /* DescriptionView.h */,
+				182AC6951BE0EDA200359322 /* DescriptionView.m */,
+				182AC6961BE0EDA200359322 /* DescriptionView.xib */,
+				182AC6971BE0EDA200359322 /* UINavigationBar+Background.h */,
+				182AC6981BE0EDA200359322 /* UINavigationBar+Background.m */,
 				182AC6721BE0ED3700359322 /* AppDelegate.h */,
 				182AC6731BE0ED3700359322 /* AppDelegate.m */,
 				182AC6751BE0ED3700359322 /* ViewController.h */,
@@ -202,6 +215,7 @@
 				182AC67A1BE0ED3700359322 /* Main.storyboard in Resources */,
 				182AC67F1BE0ED3700359322 /* LaunchScreen.xib in Resources */,
 				182AC67C1BE0ED3700359322 /* Images.xcassets in Resources */,
+				182AC69A1BE0EDA200359322 /* DescriptionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +236,8 @@
 				182AC6771BE0ED3700359322 /* ViewController.m in Sources */,
 				182AC6741BE0ED3700359322 /* AppDelegate.m in Sources */,
 				182AC6711BE0ED3700359322 /* main.m in Sources */,
+				182AC69B1BE0EDA200359322 /* UINavigationBar+Background.m in Sources */,
+				182AC6991BE0EDA200359322 /* DescriptionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
