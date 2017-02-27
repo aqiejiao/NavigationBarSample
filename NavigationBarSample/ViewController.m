@@ -23,7 +23,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.navigationController.navigationBar cnSetBackgroundColor:[UIColor clearColor]];
+//    [self.navigationController.navigationBar cnSetBackgroundColor:[UIColor clearColor]];
+    //替换这种方式
+    UIColor *color = [UIColor colorWithRed:45/255.0 green:45/255.0 blue:45/255.0 alpha:1];
+    self.navigationController.navigationBar.barTintColor = color;
+    //---end---
+    
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CustomCell"];
     _tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
     //_tableView.rowHeight = 90;
@@ -64,11 +69,16 @@
     CGFloat offsetY = scrollView.contentOffset.y;
     if (offsetY >= - _halfHeight - 64) {
         CGFloat alpha = MIN(1, (_halfHeight + 64 + offsetY)/_halfHeight);
-        [self.navigationController.navigationBar cnSetBackgroundColor:[color colorWithAlphaComponent:alpha]];
-        
+        //[self.navigationController.navigationBar cnSetBackgroundColor:[color colorWithAlphaComponent:alpha]];
+        //替换这种方式
+        [[[self.navigationController.navigationBar subviews] objectAtIndex:0] setAlpha:alpha];
+        //---end---
         _descriptionView.alpha = 1 - alpha;
     } else {
-        [self.navigationController.navigationBar cnSetBackgroundColor:[color colorWithAlphaComponent:0]];
+        //[self.navigationController.navigationBar cnSetBackgroundColor:[color colorWithAlphaComponent:0]];
+        //替换这种方式
+        [[[self.navigationController.navigationBar subviews] objectAtIndex:0] setAlpha:0];
+        //---end---
     }
 }
 
